@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int x, y, x1, y1, x2, y2;
+    float r, l;
+    printf("vvedite koordinaty centra\n");
+    scanf("%d%d", &x,&y);
+    printf("vvedite koordinaty konca\n");
+    scanf("%d%d", &x1, &y1);
+    printf("vvedite koordinaty tochki\n");
+    scanf("%d%d", &x2, &y2);
+    r = sqrt(((x1 - x) * (x1 - x)) + ((y1 - y) * (y1 - y)));
+    l = sqrt(((x2 - x) * (x2 - x)) + ((y2 - y) * (y2 - y)));
+    if (l == r)
+        printf("tochka prinadlezit okryznosti");
+    else 
+        printf("tochka ne prinadlezit okryznosti");
+    return 0;
+}
